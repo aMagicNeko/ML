@@ -77,6 +77,26 @@ class kdTree(object):
             leave's area is -1,-1
     """
     def __init__(self,data,p=2):
+        """
+        don't change datas after creating.
+
+        Parameters
+        ----------
+        data : ndarray shape: (n,m)
+            data points 
+        p : int, optional
+            DESCRIPTION. The default is 2.
+
+        Raises
+        ------
+        ValueError
+            DESCRIPTION.
+
+        Returns
+        -------
+        None.
+
+        """
         self.data=data
         if(len(data.shape) != 2 ):
             raise ValueError
